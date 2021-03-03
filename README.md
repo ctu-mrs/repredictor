@@ -1,6 +1,8 @@
 # Re-predictor
 The buffer re-prediction algorithm for fusion of variably delayed data, described in the conference publication
  * Václav Pritzl, Matouš Vrba and Martin Saska, **Adaptive Estimation of UAV Altitude in Complex Indoor Environments from Biased and Time-Delayed Measurements**, *submitted to ICUAS 2021.*
+**TODO:** update this when applicable 
+
 
 ## Prequisites
 All prequisites can usually be installed in most Linux distributions through the package manager.
@@ -8,7 +10,7 @@ All prequisites can usually be installed in most Linux distributions through the
  * CMake version at least 3.1.2
  * a `gcc` or `clang` compiler, supporting at least C++17 (C++11 may work as well, not tested)
 
-Instructions are for Linux-only, but the code is be OS-agnostic.
+Instructions are for Linux-only, but the code is OS-agnostic.
 
 ## Building
 After installing the prequisites, build simply with
