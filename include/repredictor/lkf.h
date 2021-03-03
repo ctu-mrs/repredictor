@@ -330,47 +330,6 @@ namespace repredictor
   };
   //}
 
-  /* class LKF_MRS_odom //{ */
-  class LKF_MRS_odom : public LKF<3, 1, 1>
-  {
-  public:
-    /* LKF definitions (typedefs, constants etc) //{ */
-    static const int n = 3;
-    static const int m = 1;
-    static const int p = 1;
-    using Base_class = LKF<n, m, p>;
-
-    using x_t = typename Base_class::x_t;
-    using u_t = typename Base_class::u_t;
-    using z_t = typename Base_class::z_t;
-    using P_t = typename Base_class::P_t;
-    using R_t = typename Base_class::R_t;
-    using statecov_t = typename Base_class::statecov_t;
-    using A_t = typename Base_class::A_t;  // measurement mapping p*n
-    using B_t = typename Base_class::B_t;  // process covariance n*n
-    using H_t = typename Base_class::H_t;  // measurement mapping p*n
-    using Q_t = typename Base_class::Q_t;  // process covariance n*n
-
-    using coeff_A_t = A_t;                            // matrix of constant coefficients in matrix A
-    typedef Eigen::Matrix<unsigned, n, n> dtexp_A_t;  // matrix of dt exponents in matrix A
-    using coeff_B_t = B_t;                            // matrix of constant coefficients in matrix B
-    typedef Eigen::Matrix<unsigned, n, m> dtexp_B_t;  // matrix of dt exponents in matrix B
-    //}
-
-  public:
-    LKF_MRS_odom(const std::vector<H_t>& Hs, const double default_dt = 1);
-    virtual statecov_t predict(const statecov_t& sc, const u_t& u, const Q_t& Q, double dt) const override;
-    virtual statecov_t correct(const statecov_t& sc, const z_t& z, const R_t& R, int param = 0) const;
-
-  public:
-    x_t state_predict_optimized(const x_t& x_prev, const u_t& u, double dt) const;
-    P_t covariance_predict_optimized(const P_t& P, const Q_t& Q, double dt) const;
-
-  private:
-    std::vector<H_t> m_Hs;
-  };
-  //}
-
 }  // namespace repredictor
 
 #endif // LKFSYSTEMMODELS_H
