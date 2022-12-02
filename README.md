@@ -1,8 +1,17 @@
 # Re-predictor
-The buffer re-prediction algorithm for fusion of variably delayed data, described in the conference publication
+The buffer re-prediction algorithm for fusion of variably delayed data, described in the [publication](http://mrs.felk.cvut.cz/data/papers/pritzlRAS2022.pdf)
+
  * Václav Pritzl, Matouš Vrba, Claudio Tortorici, Reem Ashour, and Martin Saska, **Adaptive Estimation of UAV Altitude in Complex Indoor Environments using Degraded
-and Time-Delayed Measurements with Time-Varying Uncertainties**, *submitted to Robotics and Autonomous Systems.*
-**TODO:** update this when applicable 
+and Time-Delayed Measurements with Time-Varying Uncertainties**, *Robotics and Autonomous Systems*. [https://doi.org/10.1016/j.robot.2022.104315](https://doi.org/10.1016/j.robot.2022.104315).
+```
+@article{pritzl2022RAS,
+	title = "Adaptive estimation of UAV altitude in complex indoor environments using degraded and time-delayed measurements with time-varying uncertainties",
+	journal = "Robotics and Autonomous Systems",
+	year = 2022,
+	doi = "https://doi.org/10.1016/j.robot.2022.104315",
+	author = "Václav Pritzl and Matouš Vrba and Claudio Tortorici and Reem Ashour and Martin Saska",
+}
+```
 
 
 ## Prequisites

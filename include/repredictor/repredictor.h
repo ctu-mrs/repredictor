@@ -68,6 +68,10 @@ namespace repredictor
     {
       assert(!m_history.empty());
       auto hist_it = std::begin(m_history);
+      if (hist_it->is_measurement) {
+        // if the first history point is measurement, don't use it for correction (to prevent it from being used twice)
+        hist_it->is_measurement = false;
+      }
       // cur_stamp corresponds to the time point of cur_sc estimation
       auto cur_stamp = hist_it->stamp;
       // cur_sc is the current state and covariance estimate
