@@ -2,14 +2,17 @@
 The buffer re-prediction algorithm for fusion of variably delayed data, described in the [publication](http://mrs.felk.cvut.cz/data/papers/pritzlRAS2022.pdf)
 
  * Václav Pritzl, Matouš Vrba, Claudio Tortorici, Reem Ashour, and Martin Saska, **Adaptive Estimation of UAV Altitude in Complex Indoor Environments using Degraded
-and Time-Delayed Measurements with Time-Varying Uncertainties**, *Robotics and Autonomous Systems*, 2022. [https://doi.org/10.1016/j.robot.2022.104315](https://doi.org/10.1016/j.robot.2022.104315).
+and Time-Delayed Measurements with Time-Varying Uncertainties**, *Robotics and Autonomous Systems* 160:104315, 2023. [https://doi.org/10.1016/j.robot.2022.104315](https://doi.org/10.1016/j.robot.2022.104315).
 ```
-@article{pritzl2022RAS,
-	title = "Adaptive estimation of UAV altitude in complex indoor environments using degraded and time-delayed measurements with time-varying uncertainties",
-	journal = "Robotics and Autonomous Systems",
-	year = 2022,
-	doi = "https://doi.org/10.1016/j.robot.2022.104315",
-	author = "Václav Pritzl and Matouš Vrba and Claudio Tortorici and Reem Ashour and Martin Saska",
+@article{pritzl2023RAS,
+title = {Adaptive estimation of UAV altitude in complex indoor environments using degraded and time-delayed measurements with time-varying uncertainties},
+journal = {Robotics and Autonomous Systems},
+volume = {160},
+pages = {104315},
+year = {2023},
+issn = {0921-8890},
+doi = {https://doi.org/10.1016/j.robot.2022.104315},
+author = {Václav Pritzl and Matouš Vrba and Claudio Tortorici and Reem Ashour and Martin Saska},
 }
 ```
 
